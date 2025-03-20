@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\court.png
+wwwroot\images\home.jpg
 wwwroot\images\logo.png
 wwwroot\images\park.png
 wwwroot\images\pool.png

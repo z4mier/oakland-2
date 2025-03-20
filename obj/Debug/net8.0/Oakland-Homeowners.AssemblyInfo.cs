@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oakland-Homeowners")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a86a7ea7d2c43b7484c5486ee334eac54437f25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e7336fb164a3ec717900a290ef45a8790f081be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oakland-Homeowners")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oakland-Homeowners")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

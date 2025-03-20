@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!-- Features Section -->
+<div class="container text-center my-5">
+    <h2>Community Living Solutions</h2>
+    <p>
+        Enhancing your everyday living with seamless solutions designed for convenience and connection. From timely<br>
+        updates and event planning to simplified payments, amenity reservations, and more, Community Living Solutions<br>
+        bring everything you need right to your fingertips.
+    </p>
+
+    <div class="feature-box">
+        <a href="@Url.Action("Announcements", "Home")" class="feature-card announcements">
+            <i class="bi bi-megaphone" style="font-size: 2rem;"></i>
+            <strong>Announcements</strong>
+            <p>Stay informed with important updates and notices.</p>
+        </a>
+
+        <a href="@Url.Action("EventCalendar", "Home")" class="feature-card event-calendar">
+            <i class="bi bi-calendar-event" style="font-size: 2rem;"></i>
+            <strong>Event Calendar</strong>
+            <p>Track upcoming events and activities easily.</p>
+        </a>
+
+        <a href="@Url.Action("BillsPayments", "Home")" class="feature-card bills-payments">
+            <i class="bi bi-cash-stack" style="font-size: 2rem;"></i>
+            <strong>Bills & Payments</strong>
+            <p>Manage and settle your bills in one place.</p>
+        </a>
+
+        <a href="@Url.Action("AmenityBooking", "Home")" class="feature-card amenity-booking">
+            <i class="bi bi-building" style="font-size: 2rem;"></i>
+            <strong>Amenity Booking</strong>
+            <p>Reserve shared facilities hassle-free.</p>
+        </a>
+
+        <a href="@Url.Action("MaintenanceRequest", "Home")" class="feature-card maintenance-request">
+            <i class="bi bi-tools" style="font-size: 2rem;"></i>
+            <strong>Maintenance Request</strong>
+            <p>Report and monitor maintenance concerns.</p>
+        </a>
+
+        <a href="@Url.Action("Feedback", "Home")" class="feature-card feedback">
+            <i class="bi bi-chat-dots" style="font-size: 2rem;"></i>
+            <strong>Feedback</strong>
+            <p>Share your thoughts and suggestions.</p>
+        </a>
+    </div>
+</div>

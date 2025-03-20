@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\court.png"
     },
     {
+      "Id": "C:\\Users\\zaira\\source\\repos\\Oakland-Homeowners\\Oakland-Homeowners\\wwwroot\\images\\home.jpg",
+      "PackagePath": "staticwebassets\\images\\home.jpg"
+    },
+    {
       "Id": "C:\\Users\\zaira\\source\\repos\\Oakland-Homeowners\\Oakland-Homeowners\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },

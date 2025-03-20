@@ -331,6 +331,88 @@
       ]
     },
     {
+      "Route": "images/home.7i4y7of31g.jpg",
+      "AssetFile": "images/home.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "245538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sT2H8RdO/DOz9m/GTCWLUprgT2aSZMCBCqstVKVKyaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 10:43:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7i4y7of31g"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sT2H8RdO/DOz9m/GTCWLUprgT2aSZMCBCqstVKVKyaE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/home.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/home.jpg",
+      "AssetFile": "images/home.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "245538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sT2H8RdO/DOz9m/GTCWLUprgT2aSZMCBCqstVKVKyaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 10:43:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sT2H8RdO/DOz9m/GTCWLUprgT2aSZMCBCqstVKVKyaE="
+        }
+      ]
+    },
+    {
       "Route": "images/logo.png",
       "AssetFile": "images/logo.png",
       "Selectors": [],

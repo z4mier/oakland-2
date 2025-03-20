@@ -1,31 +1,17 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Oakland_Homeowners.Models;
 
-namespace Oakland_Homeowners.Controllers;
-
-public class HomeController : Controller
+namespace Oakland_Homeowners.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        public IActionResult Index()
+        {
+            return View(); // Loads Views/Home/Index.cshtml
+        }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        public IActionResult Dashboard()
+        {
+            return View(); // Loads Views/Home/Dashboard.cshtml
+        }
     }
 }
