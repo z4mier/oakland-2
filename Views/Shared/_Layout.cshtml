@@ -14,6 +14,14 @@
             width: 100%;
             overflow-x: hidden; /* Prevent horizontal scroll */
             font-family: 'Josefin Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .full-height {
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         /* Full-width banner fix */
@@ -35,14 +43,6 @@
         header {
             width: 100%;
         }
-
-        /* Ensures images are properly displayed */
-        .featured img {
-            width: 100%;
-            max-height: 100px;
-            object-fit: cover;
-        }
-
         .nav-btn {
             background: none;
             border: none;
@@ -56,7 +56,6 @@
          text-decoration: underline; /* Underline on hover */
          background: none; /* Ensure no background change */
          }
-
     </style>
 </head>
 <body>
@@ -84,19 +83,55 @@
                 The Oakland Subdivision, located at 123 Oakwood Drive, Greenwood City, 56789, is a peaceful,<br>
                 well-maintained residential community offering modern amenities, spacious homes, and a family-friendly atmosphere.
             </p>
-            <a href="/about-us" class="btn btn-primary" style="background-color: #333131; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 18px; font-weight: bold; width: 200px; text-align: center;">ABOUT US</a>
+            <a href="#about-section" class="btn btn-primary" style="background-color: #333131; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 18px; font-weight: bold; width: 200px; text-align: center;">ABOUT US</a>
         </div>
     </div>
 
     <!-- Main content area -->
-    <main class="container my-4">
-        @RenderBody() <!-- This is where child views like Index.cshtml will be loaded -->
-    </main>
+    <div class="flex-grow-1">
+        @RenderBody()
+    </div>
+
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Oakland Homeowners Association. All rights reserved.</p>
+    <footer class="footer bg-black text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Left Section - Logo and Name -->
+            <div class="d-flex align-items-center">
+                <img src="/images/logo.png" alt="Oakland HOA Logo" style="height: 60px; width: auto; margin-right: 10px; border-radius: 50%; border: 2px solid white;">
+                <div>
+                    <h5 class="m-0 text-uppercase fw-bold">OAKLAND</h5>
+                    <p class="m-0">HOMEOWNERS ASSOCIATION</p>
+                </div>
+            </div>
+
+            <!-- Right Section - Contact Info & Socials -->
+            <div class="text-end">
+                <h6 class="fw-bold">CONTACT</h6>
+                <p class="m-0"><i class="bi bi-telephone"></i> 87000-564-391</p>
+                <div class="d-flex justify-content-end mt-2">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 20px;"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 20px;"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter-x" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="my-3 border-white opacity-50">
+
+        <!-- Bottom Section - Copyright & Links -->
+        <div class="container d-flex justify-content-between flex-wrap">
+            <p class="m-0">Copyright &copy; 2025 Oakland Homeowners Association. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-white me-3">Privacy Policy</a>
+                <a href="#" class="text-white">Terms & Conditions</a>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap Icons (Make sure you include Bootstrap Icons for the icons to work) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
