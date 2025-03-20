@@ -13,5 +13,14 @@ namespace Oakland_Homeowners.Controllers
         {
             return View(); // Loads Views/Home/Dashboard.cshtml
         }
+        public IActionResult Announcements()
+        {
+            return View();
+        }
+        public IActionResult EventCalendar()
+        {
+            return View();
+        }
+
     }
 }
