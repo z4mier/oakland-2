@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Oakland Homeowners Association</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure no unwanted spacing */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        /* Full-width banner fix */
+        .banner {
+            width: 100%; /* Instead of 100vw, use 100% */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: url('/images/subdivision.png') no-repeat center center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+        }
+
+        /* Ensures images are properly displayed */
+        .featured img {
+            width: 100%;
+            max-height: 100px;
+            object-fit: cover;
+        }
+
+        .nav-btn {
+            background: none;
+            border: none;
+            color: white; /* Match text color */
+            font-size: 16px; /* Adjust as needed */
+            text-decoration: none; /* Remove default underline */
+            padding: 5px 10px; /* Adjust spacing */
+        }
+
+        .nav-btn:hover {
+         text-decoration: underline; /* Underline on hover */
+         background: none; /* Ensure no background change */
+         }
+
+    </style>
+</head>
+<body>
+        
+    <!-- Header -->
+    <header class="text-white py-3" style="background-color: #333131;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="/images/logo.png" alt="Oakland HOA Logo" style="height: 60px; width: auto; margin-right: 10px;">
+                <h1 class="h3 m-0" style="font-size: 20px;">Oakland Homeowners Association</h1>
+            </div>
+            <div>
+                <a href="/login" class="nav-btn me-2" style="font-weight: bold; font-size: 18px;">LOGIN</a>
+                <a href="/signup" class="nav-btn" style="font-weight: bold; font-size: 18px;">SIGN UP</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+        <div class="banner">
+            <div class="container-fluid">
+                <h2 style="font-weight: bold; font-size: 70px;">OAKLAND HOMEOWNERS<br>ASSOCIATION</h2>
+            <p class="mb-4" style="font-weight: bold; font-size: 17px;">
+                The Oakland Subdivision, located at 123 Oakwood Drive, Greenwood City, 56789, is a peaceful,<br>
+                well-maintained residential community offering modern amenities, spacious homes, and a family-friendly atmosphere.
+            </p>
+            <a href="/about-us" class="btn btn-primary" style="background-color: #333131; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 18px; font-weight: bold; width: 200px; text-align: center;">ABOUT US</a>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <main class="container my-4">
+        @RenderBody() <!-- This is where child views like Index.cshtml will be loaded -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Oakland Homeowners Association. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
